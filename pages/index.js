@@ -130,6 +130,7 @@ export default function Home() {
 								height: "8%",
 								transform: "rotate(0deg)",
 							}}
+							className='scale'
 						>
 							<Image src={box1} layout='fill'></Image>
 						</div>
@@ -172,6 +173,7 @@ export default function Home() {
 								height: "6%",
 								transform: "",
 							}}
+							className='rotate'
 						>
 							<Image src={plus} layout='fill'></Image>
 						</div>
@@ -184,8 +186,8 @@ export default function Home() {
 								bottom: "",
 								width: "40%",
 								height: "40%",
-								transform: "rotate(-10deg)",
 							}}
+							className='float'
 						>
 							<Image src={blob} layout='fill'></Image>
 						</div>

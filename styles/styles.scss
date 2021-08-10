@@ -26,3 +26,67 @@ body {
 	position: absolute;
 	top: 2%;
 }
+
+.rotate {
+	animation-name: rotate;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	transform-origin: center;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	10%,
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.float {
+	animation-name: float;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	transform-origin: center;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0, 0) rotate(-10deg);
+	}
+	33% {
+		transform: translate(-20px, -5px) rotate(-7deg);
+	}
+	66% {
+		transform: translate(15px, 15px) rotate(-13deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(-10deg);
+	}
+}
+
+.scale {
+	animation-name: scale;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	transform-origin: center;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(.9);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(.9);
+	}
+}
