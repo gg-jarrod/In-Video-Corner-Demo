@@ -31,6 +31,7 @@ export default function Home() {
 			<Head>
 				<title>GumGum In-Video Corner</title>
 				<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />
+				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
 				<div style={{ minHeight: "100vh" }} className='-d-flex -flex-column'>
