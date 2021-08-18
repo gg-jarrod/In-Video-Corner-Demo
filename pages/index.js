@@ -16,14 +16,6 @@ import {
 } from "pier-design-system";
 import { Fragment } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import logo from "public/gumgum_logo_dark.svg";
-import blob from "public/blob.svg";
-import box1 from "public/box1.svg";
-import box2 from "public/box2.svg";
-import circle from "public/circle.svg";
-import dots from "public/dots.svg";
-import plus from "public/plus.svg";
 
 export default function Home() {
 	return (
@@ -31,14 +23,14 @@ export default function Home() {
 			<Head>
 				<title>GumGum In-Video Corner</title>
 				<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
 				<div style={{ minHeight: "100vh" }} className='-d-flex -flex-column'>
 					<div className='-bgc-dark-3'>
 						<Section style={{ maxWidth: "840px", margin: "0 auto", paddingBottom: "120px" }} className='-p-t-3'>
 							<div className='-d-flex -align-items-center -justify-content-center'>
-								<Image src={logo} width='144'></Image>
+								<img src={"gumgum_logo_dark.svg"} width='144'></img>
 							</div>
 							<Heading dark className='-text-a-center -m-v-4'>
 								In-Video Corner
@@ -55,7 +47,7 @@ export default function Home() {
 								</svg>
 								<div className='video-wrapper'>
 									<video className='video' controls autoPlay muted loop>
-										<source type='video/mp4' src={require("../public/video.mp4")} />
+										<source type='video/mp4' src={"video.mp4"} />
 									</video>
 								</div>
 								<div className='-w-100 -h-100 -pos-absolute -pointer-events-none' style={{ top: "0", zIndex: "-10" }}>
@@ -71,7 +63,7 @@ export default function Home() {
 											transform: "rotate(0deg)",
 										}}
 									>
-										<Image src={circle} layout='fill'></Image>
+										<img src={"circle.svg"} width='100%' height='100%' />
 									</div>
 									<div
 										style={{
@@ -133,7 +125,7 @@ export default function Home() {
 							}}
 							className='scale'
 						>
-							<Image src={box1} layout='fill'></Image>
+							<img src={"box1.svg"} width='100%' height='100%' />
 						</div>
 						<div
 							style={{
@@ -147,7 +139,7 @@ export default function Home() {
 								transform: "rotate(45deg)",
 							}}
 						>
-							<Image src={box2} layout='fill'></Image>
+							<img src={"box2.svg"} width='100%' height='100%' />
 						</div>
 						<div
 							style={{
@@ -161,7 +153,7 @@ export default function Home() {
 								transform: "",
 							}}
 						>
-							<Image src={dots} layout='fill'></Image>
+							<img src={"dots.svg"} width='100%' height='100%' />
 						</div>
 						<div
 							style={{
@@ -176,7 +168,7 @@ export default function Home() {
 							}}
 							className='rotate'
 						>
-							<Image src={plus} layout='fill'></Image>
+							<img src={"plus.svg"} width='100%' height='100%' />
 						</div>
 						<div
 							style={{
@@ -190,7 +182,7 @@ export default function Home() {
 							}}
 							className='float'
 						>
-							<Image src={blob} layout='fill'></Image>
+							<img src={"blob.svg"} width='100%' height='100%' />
 						</div>
 					</div>
 				</div>
